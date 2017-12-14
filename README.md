@@ -41,12 +41,31 @@ without access to a trusted certificate, with a self-signed variety that is
 created on the fly.
 
 
+## BEFORE RUNNING
+
+The ```drs-sign-ruleset.ps1``` script contains a variable called ```JDK_HOME``` that
+is set to the latest Java 8 update (as of the creation of this document,
+13-December-2017, it is Java 8 update 152). It's assignment appears near
+the top of the script and looks like this:  
+
+   ```
+   Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_152"
+   ```
+
+You must either install JDK 8 update 152 in the same directory assigned above
+or modify the ```JDK_HOME``` variable to match your installation environment.
+Because JDK 8 update 152 changes some of its default behavior compared to
+previous updates, no earlier release should be used.  As newer updates to the
+JDK appear, they should be definitely used instead.
+
+
 ## TRYING IT OUT
 
-With no modification to the script contained in this repository, it should be
-straightforward to create a sample self-signed rule set.  Issue the following
-commands from a DOS CMD prompt in the directory containing both this
-```README.md``` file and the ```drs-sign-ruleset.ps1``` script:
+After verifying that a proper ```JDK_HOME``` value has been supplied in the
+```drs-sign-ruleset.ps1``` script, it should be straightforward to create a
+sample self-signed rule set.  Issue the following commands from a
+DOS CMD prompt in the directory containing both this ```README.md``` file
+and the ```drs-sign-ruleset.ps1``` script:
 
    ```
    copy sample-ruleset.xml ruleset.xml  
@@ -84,7 +103,7 @@ use your signing certificate.  It appears as follows:
   Set-Variable -Name CA_CERT_TIMESTAMP_AUTHORITY -Value "http://MyTimestampURL"  
   ```
   
-#### Here's a brief description of the 4 (or 5 if you want to timestamp) powershell varaibles that must be set:  
+#### Here's a brief description of the 4 (or 5 if you want to timestamp) powershell variables that must be set:  
 
   ```$CA_CERT_KEYSTORE``` - This is the name of the file containing the encrypted 
      private and public keys of your signing certificate  

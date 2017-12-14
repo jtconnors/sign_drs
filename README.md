@@ -56,7 +56,7 @@ commands from a DOS CMD prompt in the directory containing both this
 The resulting run will produce three files:
 
    ```
-   DeployMentRuleSet.jar  
+   DeploymentRuleSet.jar  
    drscacerts  
    deployment.properties
    ```

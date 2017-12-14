@@ -49,7 +49,7 @@ README.md file and the drs-sign-ruleset.ps1 script:
    
 The resulting run will produce three files:
 
-   DeployMentRuleSet.jar  
+   DeploymentRuleSet.jar  
    drscacerts  
    deployment.properties
 

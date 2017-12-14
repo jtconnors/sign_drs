@@ -30,8 +30,8 @@ setps must take place:
 All four steps must be successfully completed.  Failure of any type in the
 aforementioned sequence will result in an invalid Deployment Rule Set.
 
-This project deals specifically with step 3, namely the process of signing the
-```DeploymentRuleSet.jar``` file.
+This project deals specifically with steps 2 and 3, namely the process of
+creating and signing the ```DeploymentRuleSet.jar``` file.
 
 The powershell script contained in this repository facilitates signing the
 ```DeploymentRuleSet.jar``` file -- a process considered by some to be both 
@@ -69,7 +69,7 @@ and the ```drs-sign-ruleset.ps1``` script:
 
    ```
    copy sample-ruleset.xml ruleset.xml  
-   powershell .\drs-sign-ruleset.ps1  
+   powershell .\drs-sign-ruleset.ps1 -selfsign
    ```
    
 The resulting run will produce three files:
@@ -171,6 +171,6 @@ of the options follows.
              format.  If you wish to generate the keystore and trustsore in
              legacy JKS format, use this option.  
 
-  -verbose   Signing a rule set is composed of multiple steps.  Using this
+  ```-verbose```   Signing a rule set is composed of multiple steps.  Using this
              option will output each individual command, with arguments, that
              is executed along the way.  

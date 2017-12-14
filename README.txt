@@ -26,8 +26,8 @@ setps must take place:
 All four steps must be successfully completed.  Failure of any type in the
 aforementioned sequence will result in an invalid Deployment Rule Set.
 
-This project deals specifically with step 3, namely the process of signing the
-DeploymentRuleSet.jar file.
+This project deals specifically with steps 2 and 3, namely the process of
+creating and signing the DeploymentRuleSet.jar file.
 
 The powershell script contained in this repository facilitates signing the
 DeploymentRuleSet.jar file -- a process considered by some to be both 
@@ -62,7 +62,7 @@ DOS CMD prompt in the directory containing both this README.txt file
 and the drs-sign-ruleset.ps1 script:
    
    copy sample-ruleset.xml ruleset.xml  
-   powershell .\drs-sign-ruleset.ps1  
+   powershell .\drs-sign-ruleset.ps1 -selfsign  
    
 The resulting run will produce three files:
 

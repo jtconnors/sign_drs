@@ -3,7 +3,7 @@
     <!--Rule set created with Oracle Java Advanced Management Console 2.8-b06 by amcadmin@jtconnors.com on 2017/11/02-->
     <rule>
         <id location="https://javatester.org/version.html"/>
-        <action permission="run" version="1.6.0_171"/>
+        <action permission="run" version="1.6.0_181"/>
     </rule>
     <rule>
         <id location="http://www.cs.stir.ac.uk/~sbj/examples/Java-examples-basic/Rings/Rings.html"/>

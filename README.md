@@ -44,17 +44,17 @@ created on the fly.
 ## BEFORE RUNNING
 
 The ```drs-sign-ruleset.ps1``` script contains a variable called ```JDK_HOME``` that
-is set to the latest Java 8 update (as of the creation of this document,
-13-December-2017, it is Java 8 update 152). It's assignment appears near
+is set to the latest Java 8 update (as of the latest mod of this document,
+16-January-2018, it is Java 8 update 162). It's assignment appears near
 the top of the script and looks like this:  
 
    ```
-   Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_152"
+   Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_162"
    ```
 
-You must either install JDK 8 update 152 in the same directory assigned above
+You must either install JDK 8 update 162 in the same directory assigned above
 or modify the ```JDK_HOME``` variable to match your installation environment.
-Because JDK 8 update 152 changes some of its default behavior compared to
+Because JDK 8 update 162 changes some of its default behavior compared to
 previous updates, no earlier release should be used.  As newer updates to the
 JDK appear, they should be definitely used instead.
 

@@ -41,7 +41,7 @@ BEFORE RUNNING
 
 The drs-sign-ruleset.ps1 script contains a variable called JDK_HOME that
 is set to the latest Java 8 update (as of the latest mod of this document,
-16-January-2018, it is Java 8 update 162). It's assignment appears near
+16-January-2018, it is Java 8 update 162). Its assignment appears near
 the top of the script and looks like this:  
 
    Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_162"

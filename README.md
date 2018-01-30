@@ -17,8 +17,8 @@ here:
 https://docs.oracle.com/javase/8/docs/technotes/guides/deploy/deployment_rules.html
 
 Describing Rule Sets in detail is beyond the scope of this README, suffice it
-to say, in order to correctly Deploy a rule set, the following high-level
-setps must take place:
+to say, in order to correctly deploy a rule set, the following high-level
+steps must take place:
 
 1. Create rules (in XML syntax) and store them in a file called ```ruleset.xml```
 2. Using the ```jar(1)``` utility, create a ```DeploymentRuleSet.jar``` file that
@@ -27,7 +27,7 @@ setps must take place:
 4. Place the signed ```DeploymentRuleSet.jar``` in the following Windows directory:
    ```C:\Windows\Sun\Java\Deployment\```
    
-All four steps must be successfully completed.  Failure of any type in the
+All four must be successfully completed.  Failure of any type in the
 aforementioned sequence will result in an invalid Deployment Rule Set.
 
 This project deals specifically with steps 2 and 3, namely the process of
@@ -81,7 +81,7 @@ The resulting run will produce three files:
    ```
 
 Once they are copied to the ```C:\Windows\Sun\Java\Deployment\``` directory,
-(you'll need Administrator privieges to do so), a Deployment Rule Set will
+(you'll need Administrator privileges to do so), a Deployment Rule Set will
 be active.
 
 
@@ -89,7 +89,7 @@ be active.
 
 For those utilizing Deployment Rule Sets in production, it is STRONGLY
 RECOMMENDED that the ```DeploymentRuleSet.jar``` file be signed with a certificate
-from a trusted authority.  Beacuse it would be impossible to determine
+from a trusted authority.  Because it would be impossible to determine
 beforehand the specifics of your trusted certificate, some customization of
 the ```drs-sign-ruleset.ps1``` file is required.  Near the beginning of the script
 there is a small section dedicated to setting the properties necessary to

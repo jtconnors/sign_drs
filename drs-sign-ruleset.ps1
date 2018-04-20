@@ -15,7 +15,7 @@
 #
 # This variable MUST be set with a valid Java JDK location
 #
-Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_162"
+Set-Variable -Name JDK_HOME -Value "C:\Program Files\Java\jdk1.8.0_172"
 
 #
 # If you want to sign the Deployment Rule Set with a trusted certificate
